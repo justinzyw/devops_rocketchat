@@ -31,7 +31,7 @@ $ROCKETCHATDB_IMAGE
 
 echo ---$(currentTime)---create rocketchat service---
 sudo docker service create -d \
---publish $ROCKETCHAT_PORT:80 \
+--publish $ROCKETCHAT_PORT:3000 \
 --name devops-rocketchat \
 --mount type=volume,source=devops_rocketchat_volume_uploads,destination=/app/uploads,\
 volume-driver=local-persist,volume-opt=mountpoint=/var/nfs/volumes/devops_rocketchat_volume_uploads \
