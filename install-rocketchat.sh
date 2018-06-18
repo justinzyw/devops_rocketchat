@@ -54,7 +54,6 @@ $ROCKETCHATHUBOT_IMAGE
 
 
 
-
 sudo docker service scale devops-rocketchatdb=1
 sudo docker service scale devops-rocketchat=1
 sudo docker service scale devops-rocketchathubot=1
